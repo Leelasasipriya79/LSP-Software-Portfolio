@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" class="loading" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kasani Leela Sasi Priya | Python Full Stack Developer</title>
+<meta name="description" content="Portfolio of Kasani Leela Sasi Priya, a Python full stack developer building React.js interfaces, REST APIs, and MySQL-backed applications.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<noscript><style>#loader{display:none}html.loading{overflow:auto}.loading .ch,.loading .hello,.loading .role,.loading .hero-p,.loading .cta{animation-play-state:running}</style></noscript>
+</head>
+<body>
+<div id="loader" role="status" aria-label="Loading portfolio">
+  <div class="ld-inner">
+    <div class="ld-logo">LS</div>
+    <svg class="ld-wave" viewBox="0 0 300 60" aria-hidden="true"><path class="track" pathLength="100" d="M0 30 C25 -10 50 -10 75 30 S125 70 150 30 S200 -10 225 30 S275 70 300 30"/><path class="pulse" pathLength="100" d="M0 30 C25 -10 50 -10 75 30 S125 70 150 30 S200 -10 225 30 S275 70 300 30"/></svg>
+    <div class="ld-name">Kasani Leela Sasi Priya</div>
+    <div class="ld-bar"><i id="ldbar"></i></div>
+    <div class="ld-pct"><span id="ldnum">0</span>%</div>
+  </div>
+</div>
+<div id="progress"></div>
+<div id="glow"></div>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Back to top"><i>LS</i>Leela Sasi Priya</a>
+    <div class="links">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+      <button id="theme" aria-label="Switch to light mode"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+    </div>
+  </div>
+</nav>
+
+<header id="top">
+  <canvas id="scope" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div class="hello"><b></b>Open to Python full stack roles</div>
+    <h1 aria-label="Kasani Leela Sasi Priya">
+      <span class="ln" data-split="Kasani Leela" aria-hidden="true"></span>
+      <span class="ln" data-split="Sasi Priya" aria-hidden="true"></span>
+    </h1>
+    <div class="role" aria-live="off"><span id="typed"></span></div>
+    <p class="hero-p">I'm a Python full stack developer. I build responsive React.js interfaces, connect them through REST APIs, and keep the data in order with MySQL.</p>
+    <div class="cta">
+      <a class="btn primary mag" href="#projects">See my projects</a>
+      <a class="btn ghost mag" href="#contact">Get in touch</a>
+      <a class="btn ghost mag" href="assets/Kasani_Leela_Sasi_Priya_Resume.pdf" download><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 20h16"/></svg> Download resume</a>
+      <a class="btn ghost mag" href="https://github.com/leelasasipriya79" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>GitHub</a>
+    </div>
+  </div>
+  <div class="scopebar">
+    <div class="wrap">
+      <span class="seglabel">Change the wave</span>
+      <div class="seg" role="group" aria-label="Waveform shape">
+        <button aria-pressed="true" data-w="sine">Sine</button>
+        <button aria-pressed="false" data-w="square">Square</button>
+        <button aria-pressed="false" data-w="triangle">Triangle</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="marquee" aria-hidden="true">
+  <div class="track" id="track"></div>
+</div>
+
+<section id="about">
+  <div class="wrap">
+    <h2 class="rv">How I work</h2>
+    <div class="about">
+      <div class="rv">
+        <p>I'm a Python full stack developer who works across the interface, the API layer, and the database. I like turning a loose set of requirements into something that runs reliably and is easy to use.</p>
+        <p>I build responsive interfaces in HTML, CSS, JavaScript, and React.js, connect them to backend services through APIs, and write Python and MySQL programs that manage records with full CRUD operations.</p>
+        <p>I like debugging as much as building. Tracing a problem to its source is the part of the job I enjoy most.</p>
+      </div>
+      <div class="stats">
+        <div class="stat rv" style="--d:.05s"><b data-to="8.22" data-dec="2">0</b><span>CGPA out of 10 in B.Tech</span></div>
+        <div class="stat rv" style="--d:.15s"><b data-to="2">0</b><span>Roles in software development</span></div>
+        <div class="stat rv" style="--d:.25s"><b data-to="2">0</b><span>Projects built end to end</span></div>
+        <div class="stat rv" style="--d:.35s"><b data-to="12">0</b><span>Months in a Ministry of Defence apprenticeship</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2 class="rv">How I build, front to back</h2>
+    <p class="lede rv" style="margin-top:18px">Every project I make follows the same path: an interface people can use, a connection to the data, and a database that stays correct.</p>
+    <div class="chain">
+      <div class="node rv" style="--d:.0s"><div class="pulse" style="--k:0"></div><h3>Interface</h3><p>What people see and tap.</p><div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">React.js</span><span class="chip">Responsive design</span></div></div>
+      <div class="node rv" style="--d:.1s"><div class="pulse" style="--k:1"></div><h3>Connection</h3><p>How the pieces talk.</p><div class="chips"><span class="chip">REST APIs</span><span class="chip">Postman</span><span class="chip">Git</span><span class="chip">GitHub</span></div></div>
+      <div class="node rv" style="--d:.2s"><div class="pulse" style="--k:2"></div><h3>Logic</h3><p>Rules that make it work.</p><div class="chips"><span class="chip">Python</span><span class="chip">JavaScript</span><span class="chip">Debugging</span></div></div>
+      <div class="node rv" style="--d:.3s"><div class="pulse" style="--k:3"></div><h3>Data</h3><p>Where records live.</p><div class="chips"><span class="chip">MySQL</span><span class="chip">SQL</span><span class="chip">CRUD operations</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <h2 class="rv">Where I've worked</h2>
+    <div class="timeline" id="timeline">
+      <div class="fill" id="fill"></div>
+      <article class="job rv">
+        <h3>Engineering Graduate Apprentice</h3>
+        <div class="org">AVNL, Heavy Vehicles Factory (HVF), Ministry of Defence</div>
+        <div class="when">September 2025 to September 2026, Chennai</div>
+        <ul>
+          <li>Worked on Python and MySQL exercises covering database connectivity, product record management, and CRUD operations.</li>
+          <li>Used analytical thinking and debugging to solve programming and database problems.</li>
+        </ul>
+      </article>
+      <article class="job rv" style="--d:.1s">
+        <h3>Frontend Developer</h3>
+        <div class="org">Bloom IT Solutions</div>
+        <div class="when">April 2025 to July 2025</div>
+        <ul>
+          <li>Built responsive websites and user-friendly interfaces with HTML, CSS, and JavaScript.</li>
+          <li>Connected frontend components to backend services and APIs.</li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="edu rv">
+      <div class="ring" id="ring">
+        <svg viewBox="0 0 160 160" aria-hidden="true"><circle class="bg" cx="80" cy="80" r="70"/><circle class="fg" cx="80" cy="80" r="70"/></svg>
+        <div><span id="cgpa" data-to="8.22">0.00</span><small>out of 10</small></div>
+      </div>
+      <div>
+        <h3>B.Tech in Electronics and Communication Engineering</h3>
+        <p>Krishna University, Machilipatnam, Andhra Pradesh</p>
+        <p>Graduated April 2024 with a CGPA of 8.22.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <h2 class="rv">Things I've made</h2>
+    <div class="projects">
+
+      <article class="proj tilt rv">
+        <div class="copy">
+          <h3>Raanvi</h3>
+          <p>An organic health products website with separate admin and user dashboards. I built the responsive pages, the dashboard interfaces, and the navigation, with a focus on showing products clearly and keeping the layout easy to use.</p>
+          <div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">Dashboards</span><span class="chip">Responsive</span></div>
+          <div class="plinks">
+            <a class="btn primary sm mag" href="https://raanvi-nine.vercel.app/" target="_blank" rel="noopener">Landing page</a>
+            <a class="btn ghost sm mag" href="https://binary-admin.vercel.app/" target="_blank" rel="noopener">Admin dashboard</a>
+            <a class="btn ghost sm mag" href="https://binary-user.vercel.app/" target="_blank" rel="noopener">User dashboard</a>
+          </div>
+        </div>
+        <div>
+          <div class="shots" id="shots">
+            <div class="tabs" role="tablist" aria-label="Raanvi screens">
+              <button role="tab" aria-selected="true" data-i="0">Landing page</button>
+              <button role="tab" aria-selected="false" data-i="1">Admin dashboard</button>
+              <button role="tab" aria-selected="false" data-i="2">User dashboard</button>
+            </div>
+            <div class="frame">
+              <div class="fbar" aria-hidden="true"><i></i><i></i><i></i><span class="url" id="shoturl">raanvi-nine.vercel.app</span></div>
+              <div class="view">
+                <img class="on" alt="Raanvi landing page with a welcome banner and product bottles" src="assets/landing.jpg">
+                <img alt="Raanvi admin dashboard showing user, KYC and withdrawal statistics" src="assets/admin.jpg">
+                <img alt="Raanvi user dashboard showing wallet, team and bonus cards" src="assets/user.jpg">
+              </div>
+            </div>
+            <a class="shotlink" id="shotopen" href="https://raanvi-nine.vercel.app/" target="_blank" rel="noopener">Open the live landing page</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj flip tilt rv">
+        <div class="copy">
+          <h3>Product Inventory Management System</h3>
+          <p>A database-driven application built with Python and MySQL to manage product records, stock quantities, and inventory details. It adds, views, updates, and deletes records using SQL queries. Try the same four operations in the browser demo.</p>
+          <div class="chips"><span class="chip">Python</span><span class="chip">MySQL</span><span class="chip">SQL</span><span class="chip">CRUD</span></div>
+        </div>
+        <div class="demo">
+          <div class="head"><span>Product</span><span>Stock</span><span></span></div>
+          <div id="rows"></div>
+          <div class="add">
+            <input type="text" id="pname" placeholder="Product name" aria-label="Product name" maxlength="28">
+            <input type="number" id="pqty" placeholder="Qty" aria-label="Quantity" min="0" max="9999">
+            <button id="addbtn">Add product</button>
+          </div>
+          <div class="sql" id="sql" aria-live="polite"></div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+  <div class="wrap">
+    <h2 class="rv">Let's build something together</h2>
+    <p class="lede rv">I'm looking for Python full stack roles. Send me a message and I'll reply soon.</p>
+    <div class="orbs rv">
+      <a class="btn primary mag" href="mailto:leelasasipriyakasani@gmail.com">leelasasipriyakasani@gmail.com</a>
+      <a class="btn ghost mag" href="tel:+918897876517">+91 88978 76517</a>
+      <a class="btn ghost mag" href="assets/Kasani_Leela_Sasi_Priya_Resume.pdf" download><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 20h16"/></svg> Download resume</a>
+      <a class="btn ghost mag" href="https://www.linkedin.com/in/kasani-leelasasipriya-525a7b26a/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn ghost mag" href="https://github.com/leelasasipriya79" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <p class="note" style="margin-top:22px">Based in Rajahmundry, India</p>
+  </div>
+</section>
+
+<footer>Designed and built by Kasani Leela Sasi Priya</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
